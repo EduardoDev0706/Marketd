@@ -71,6 +71,7 @@ Exemplo de resposta:
     "scrapedAt": "2026-07-27T14:30:00"
   }
 ]
-      ```
+```
+
 
 
