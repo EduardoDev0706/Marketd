@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  marketd-service:
+    build: .
+    container_name: marketd_daemon
+    restart: unless-stopped # Se o SO reiniciar, o daemon sobe automaticamente junto com o sistema
+    ports:
+      - "8080:8080"
+    volumes:
+      - marketd_data:/app/data
+
+volumes:
+  marketd_data:
